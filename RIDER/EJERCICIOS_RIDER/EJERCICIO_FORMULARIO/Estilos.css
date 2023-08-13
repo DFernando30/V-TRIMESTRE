@@ -1,0 +1,83 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .logica {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  /* Estilos de encabezado */
+  h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de etiquetas y selectores */
+  label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  select,
+  input[type="number"],
+  input[type="radio"],
+  input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #f8f8f8;
+  }
+  
+  /* Estilos de botón */
+  .btnsContenedor {
+    text-align: center;
+  }
+  
+  .btns {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btns:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos de tarjeta */
+  .card {
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  /* Estilos de contenedor de tarjeta */
+  .contenedor {
+    /* Agrega aquí tus estilos para el contenido de la tarjeta */
+  }
+  
