@@ -1,0 +1,37 @@
+Las bases de datos no relacionales (también conocidas como bases de datos NoSQL) 
+son sistemas de gestión de bases de datos que difieren en su estructura y enfoque de las bases de datos relacionales tradicionales. 
+Aquí hay algunos conceptos clave en las bases de datos no relacionales y cómo se comparan con los conceptos en las bases de datos relacionales:
+
+1. Colecciones (NoSQL) vs. Tablas (SQL):
+
+Colecciones (NoSQL): En lugar de utilizar tablas como en las bases de datos relacionales, las bases de datos no relacionales utilizan colecciones. 
+Las colecciones contienen documentos, que pueden ser estructurados de manera flexible (como objetos JSON en MongoDB) o incluso no estructurados (en bases de datos de tipo clave-valor).
+Tablas (SQL): En las bases de datos relacionales, los datos se almacenan en tablas con filas y columnas. Cada fila representa un registro y cada columna contiene un atributo específico del registro.
+
+2. Documentos (NoSQL) vs. Filas (SQL):
+
+Documentos (NoSQL): En bases de datos no relacionales como MongoDB, un documento es una unidad de datos independiente que contiene información en un formato como JSON o BSON. 
+Los documentos pueden tener estructuras flexibles y anidadas.
+Filas (SQL): En bases de datos relacionales, una fila es un registro individual en una tabla con un conjunto fijo de columnas.
+
+3. Clave-Valor (NoSQL) vs. Tablas con Claves Primarias (SQL):
+
+Clave-Valor (NoSQL): Las bases de datos clave-valor almacenan pares de clave y valor, donde la clave es un identificador único y el valor es el dato asociado. Ejemplos incluyen Redis y DynamoDB.
+Tablas con Claves Primarias (SQL): En las bases de datos relacionales, las tablas tienen una clave primaria única que identifica de manera única cada registro.
+
+4. Columnas Familias (NoSQL) vs. Columnas (SQL):
+
+Columnas Familias (NoSQL): En bases de datos de tipo columna, como HBase, los datos se almacenan en columnas dentro de familias de columnas. 
+Cada fila puede tener múltiples columnas y cada columna puede contener múltiples versiones.
+Columnas (SQL): En bases de datos relacionales, cada columna representa un atributo específico de los registros en una tabla.
+
+5. Grafos (NoSQL) vs. Tablas Relacionales (SQL):
+
+Grafos (NoSQL): Las bases de datos de grafo, como Neo4j, se centran en las relaciones entre los datos. Los nodos representan entidades y las relaciones se almacenan como bordes.
+Tablas Relacionales (SQL): En bases de datos relacionales, las relaciones se establecen a través de claves foráneas que vinculan registros en diferentes tablas.
+Es importante destacar que no siempre es necesario convertir los datos de una base de datos no relacional a una base de datos relacional. 
+La elección entre una base de datos relacional y una no relacional depende en gran medida de los requisitos y características específicos de tu aplicación.
+
+Si deseas migrar datos de una base de datos no relacional a una relacional, generalmente se requiere un proceso de transformación y mapeo, ya que los esquemas y las estructuras son diferentes.
+La migración podría implicar escribir scripts o programas que extraigan datos de la base de datos no relacional y los inserten en la base de datos relacional según el nuevo esquema. 
+La complejidad de la migración dependerá de la cantidad y complejidad de los datos, así como de las diferencias en los esquemas y las estructuras.
