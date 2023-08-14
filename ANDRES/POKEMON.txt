@@ -1,0 +1,70 @@
+{
+	"CantidadPokemones" : 1010,
+	"listapokemons" : [
+					
+		{"Pokemones":
+			"Id" : 01,
+			"Nombre": "Pikachu",
+			"Especial" : false,
+			"Altura" : "0.4 metros",
+			"Valor Ataque" : 55,
+			"Valor Defensa" : 40,
+			"Color" : "Amarillo" 
+		},{
+			"Id" : 02,
+			"Nombre": "Charizard",
+			"Especial" : false,
+			"Altura" : "1.7 metros",
+			"Valor Ataque" : 84,
+			"Valor Defensa" : 78,
+			"Color" : "Rojo" 
+		}
+		]
+
+
+		{"Habilidades" : [
+
+		{	"Id" : 01,
+			"Habilidad" : "Electricidad Estática"
+
+		},{
+			"Id" : 02,
+			"Habilidad" : "Mar Llamas"
+
+		}
+		]
+
+
+		{"Tipo" : [
+		
+		{ 	"Id" : 01,
+			"Tipo 1" : "Eléctrico",
+			"Tipo 2" : Null
+
+		},{
+
+			"Id" : 02,
+			"Tipo 1" : "Fuego",
+			"Tipo 2" : "Volador"
+
+
+		}
+		] 
+
+		{"Movimientos" : [
+
+		{	"Id" : 01,
+			"Movimiento" : "Impactrueno",
+			"Daño" : "Variable",
+			"Tipo de Daño" : "Eléctrico"
+
+		},{
+		
+			"Id" : 02,
+			"Movimiento" : "Lanzallamas",
+			"Daño" : "Variable",
+			"Tipo de Daño" : "Fuego"
+
+		}
+		]
+}
