@@ -1,5 +1,5 @@
 {
-	"CantidadPokemones" : 1010,
+	"CantidadPokemones" : 2,
 	"listapokemons" : [
 					
 		{"Pokemones":
