@@ -8,6 +8,28 @@ btnCart.addEventListener('click', () => {
 });
 
 /* ========================= */
+
+// Función para guardar los productos en el LocalStorage
+const guardarProductos = () => {
+	localStorage.setItem('cartProducts', JSON.stringify(allProducts));
+};
+
+// Función para cargar los productos desde el LocalStorage
+const cargarProductos = () => {
+	const storedProducts = localStorage.getItem('cartProducts');
+	return storedProducts ? JSON.parse(storedProducts) : [];
+};
+
+// Agregar el evento 'beforeunload' para guardar los productos antes de que la página se cierre
+window.addEventListener('beforeunload', guardarProductos);
+
+// Cargar los productos almacenados al cargar la página
+window.addEventListener('load', () => {
+	allProducts = cargarProductos();
+	showHTML();
+});
+
+/* ========================= */
 const cartInfo = document.querySelector('.cart-product');
 const rowProduct = document.querySelector('.row-product');
 
@@ -58,19 +80,26 @@ productsList.addEventListener('click', e => {
 });
 
 rowProduct.addEventListener('click', e => {
-	if (e.target.classList.contains('icon-close')) {
-		const product = e.target.parentElement;
-		const title = product.querySelector('p').textContent;
+    if (e.target.classList.contains('icon-close')) {
+        let confirmarEliminacion = confirm("¿Deseas eliminar este producto?");
+        
+        if (confirmarEliminacion == true) {
+            const product = e.target.parentElement;
+            const title = product.querySelector('p').textContent;
 
-		allProducts = allProducts.filter(
-			product => product.title !== title
-		);
+            allProducts = allProducts.filter(
+                product => product.title !== title
+            );
 
-		console.log(allProducts);
-
-		showHTML();
-	}
+            console.log(allProducts);
+            showHTML();
+			
+        } else {
+            showHTML();
+        }
+    }
 });
+
 
 // Funcion para mostrar  HTML
 const showHTML = () => {
