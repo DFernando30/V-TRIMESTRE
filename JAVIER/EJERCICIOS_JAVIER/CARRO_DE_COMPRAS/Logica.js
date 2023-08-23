@@ -9,6 +9,8 @@ btnCart.addEventListener('click', () => {
 
 /* ========================= */
 
+/* lOCAL STORAGE */
+
 // Función para guardar los productos en el LocalStorage
 const guardarProductos = () => {
 	localStorage.setItem('cartProducts', JSON.stringify(allProducts));
@@ -30,10 +32,14 @@ window.addEventListener('load', () => {
 });
 
 /* ========================= */
+
+// CREAR VARIABLES 
+
 const cartInfo = document.querySelector('.cart-product');
 const rowProduct = document.querySelector('.row-product');
 
-// Lista de todos los contenedores de productos
+// LISTA DE TODOS LOS CONTENEDORES DE PRODUCTOS
+
 const productsList = document.querySelector('.container-items');
 
 // Variable de arreglos de Productos
