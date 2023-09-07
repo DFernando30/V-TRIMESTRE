@@ -31,3 +31,9 @@ MORGAN = Es un módulo que permite registra o ver por consola las peticiones que
 ***-----------------------------------------------------------***
 
 index.html = Contener el código de la app, solo en la manera en la que vamos a montar REACT 
+
+***-----------------------------------------------------------***
+
+app = donde estará todo el código de react, interfaz del FRONTEND
+
+index.js = 
