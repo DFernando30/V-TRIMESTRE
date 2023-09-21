@@ -1,0 +1,15 @@
+1. Instalamos el package.json (nom init -y).
+2. Instalamos express (npm i express).
+3. Importamos express 
+4. Corremos el navegador y lo probamos con el local host.
+
+-------------------- ********** --------------------
+
+5. carpeta ROUTES, para crear las URL del backend, para definir las rutas que puede pedir el FRONT-END.
+6. Carpeta Controller, que servirá para crear funciones, qeu se van a ejecutar cuando visitemos una URL.
+7. Carpeta Models, para guardar los modelos de datos de la DB (MongoDB).
+8. Carpeta Middlewares, para decir que rutas estan verificadas o autenticadas. Validar las funciones.
+9. Carpeta LIBS, que servirá para escribir código que podemos reimportar varias veces.
+10. DB.JS, la conexion de la base de datos.
+11. CONFIG.JS, crear configuaraciones que los otros archivos van a poder importar.
+12. INDEX.JS, el encargado de llamar e iniciar todo.
